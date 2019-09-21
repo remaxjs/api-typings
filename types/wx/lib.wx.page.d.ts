@@ -25,7 +25,7 @@ declare namespace WechatMiniprogram {
         type Instance<
             TData extends DataOption,
             TCustom extends CustomOption
-        > = OptionalInterface<ILifetime> &
+            > = OptionalInterface<ILifetime> &
             InstanceProperties &
             InstanceMethods<TData> &
             Data<TData> &
@@ -33,7 +33,7 @@ declare namespace WechatMiniprogram {
         type Options<
             TData extends DataOption,
             TCustom extends CustomOption
-        > = (TCustom & Partial<Data<TData>> & Partial<ILifetime>) &
+            > = (TCustom & Partial<Data<TData>> & Partial<ILifetime>) &
             ThisType<Instance<TData, TCustom>>
         type TrivialInstance = Instance<IAnyObject, IAnyObject>
         interface Constructor {
@@ -212,7 +212,7 @@ declare namespace WechatMiniprogram {
 /**
  * 注册小程序中的一个页面。接受一个 `Object` 类型参数，其指定页面的初始数据、生命周期回调、事件处理函数等。
  */
-declare const Page: WechatMiniprogram.Page.Constructor
+// declare const Page: WechatMiniprogram.Page.Constructor
 /**
  * 获取当前页面栈。数组中第一个元素为首页，最后一个元素为当前页面。
 
@@ -221,4 +221,4 @@ declare const Page: WechatMiniprogram.Page.Constructor
  *  - __不要尝试修改页面栈，会导致路由以及页面状态错误。__
  *  - 不要在 `App.onLaunch` 的时候调用 `getCurrentPages()`，此时 `page` 还没有生成。
  */
-declare const getCurrentPages: WechatMiniprogram.Page.getCurrentPages
+// declare const getCurrentPages: WechatMiniprogram.Page.getCurrentPages

@@ -195,17 +195,17 @@ declare namespace WechatMiniprogram {
          * - 'utf8': ;
          * - 'latin1': ; */
         encoding?:
-            | 'ascii'
-            | 'base64'
-            | 'binary'
-            | 'hex'
-            | 'ucs2'
-            | 'ucs-2'
-            | 'utf16le'
-            | 'utf-16le'
-            | 'utf-8'
-            | 'utf8'
-            | 'latin1'
+        | 'ascii'
+        | 'base64'
+        | 'binary'
+        | 'hex'
+        | 'ucs2'
+        | 'ucs-2'
+        | 'utf16le'
+        | 'utf-16le'
+        | 'utf-8'
+        | 'utf8'
+        | 'latin1'
         /** 接口调用失败的回调函数 */
         fail?: AppendFileFailCallback
         /** 接口调用成功的回调函数 */
@@ -1061,7 +1061,7 @@ backgroundAudioManager.src = 'http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb
      * | WhiteSmoke           | #F5F5F5 |
      * | Yellow               | #FFFF00 |
      * | YellowGreen          | #9ACD32 | */
-    interface Color {}
+    interface Color { }
     interface CompressImageOption {
         /** 图片路径，图片的路径，可以是相对路径、临时文件路径、存储文件路径 */
         src: string
@@ -1154,13 +1154,13 @@ backgroundAudioManager.src = 'http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb
          * - 'step-start': 动画第一帧就跳至结束状态直到结束;
          * - 'step-end': 动画一直保持开始状态，最后一帧跳到结束状态; */
         timingFunction?:
-            | 'linear'
-            | 'ease'
-            | 'ease-in'
-            | 'ease-in-out'
-            | 'ease-out'
-            | 'step-start'
-            | 'step-end'
+        | 'linear'
+        | 'ease'
+        | 'ease-in'
+        | 'ease-in-out'
+        | 'ease-out'
+        | 'step-start'
+        | 'step-end'
         transformOrigin?: string
     }
     interface CreateBLEConnectionOption {
@@ -1670,14 +1670,14 @@ backgroundAudioManager.src = 'http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb
          *
          * 最低基础库： `1.9.90` */
         orientation:
-            | 'up'
-            | 'up-mirrored'
-            | 'down'
-            | 'down-mirrored'
-            | 'left-mirrored'
-            | 'right'
-            | 'right-mirrored'
-            | 'left'
+        | 'up'
+        | 'up-mirrored'
+        | 'down'
+        | 'down-mirrored'
+        | 'left-mirrored'
+        | 'right'
+        | 'right-mirrored'
+        | 'left'
         /** 图片的本地路径 */
         path: string
         /** 图片格式
@@ -3306,17 +3306,17 @@ innerAudioContext.onError((res) => {
          * - 'utf8': ;
          * - 'latin1': ; */
         encoding?:
-            | 'ascii'
-            | 'base64'
-            | 'binary'
-            | 'hex'
-            | 'ucs2'
-            | 'ucs-2'
-            | 'utf16le'
-            | 'utf-16le'
-            | 'utf-8'
-            | 'utf8'
-            | 'latin1'
+        | 'ascii'
+        | 'base64'
+        | 'binary'
+        | 'hex'
+        | 'ucs2'
+        | 'ucs-2'
+        | 'utf16le'
+        | 'utf-16le'
+        | 'utf-8'
+        | 'utf8'
+        | 'latin1'
         /** 接口调用失败的回调函数 */
         fail?: ReadFileFailCallback
         /** 接口调用成功的回调函数 */
@@ -3369,13 +3369,13 @@ innerAudioContext.onError((res) => {
          *
          * 最低基础库： `2.1.0` */
         audioSource?:
-            | 'auto'
-            | 'buildInMic'
-            | 'headsetMic'
-            | 'mic'
-            | 'camcorder'
-            | 'voice_communication'
-            | 'voice_recognition'
+        | 'auto'
+        | 'buildInMic'
+        | 'headsetMic'
+        | 'mic'
+        | 'camcorder'
+        | 'voice_communication'
+        | 'voice_recognition'
         /** 录音的时长，单位 ms，最大值 600000（10 分钟） */
         duration?: number
         /** 编码码率，有效值见下表格 */
@@ -3407,15 +3407,15 @@ innerAudioContext.onError((res) => {
          * - 44100: 44100 采样率;
          * - 48000: 48000 采样率; */
         sampleRate?:
-            | 8000
-            | 11025
-            | 12000
-            | 16000
-            | 22050
-            | 24000
-            | 32000
-            | 44100
-            | 48000
+        | 8000
+        | 11025
+        | 12000
+        | 16000
+        | 22050
+        | 24000
+        | 32000
+        | 44100
+        | 48000
     }
     /** 菜单按钮的布局位置信息 */
     interface Rect {
@@ -3587,14 +3587,14 @@ innerAudioContext.onError((res) => {
          * - 'TRACE': HTTP 请求 TRACE;
          * - 'CONNECT': HTTP 请求 CONNECT; */
         method?:
-            | 'OPTIONS'
-            | 'GET'
-            | 'HEAD'
-            | 'POST'
-            | 'PUT'
-            | 'DELETE'
-            | 'TRACE'
-            | 'CONNECT'
+        | 'OPTIONS'
+        | 'GET'
+        | 'HEAD'
+        | 'POST'
+        | 'PUT'
+        | 'DELETE'
+        | 'TRACE'
+        | 'CONNECT'
         /** 响应的数据类型
          *
          * 可选值：
@@ -3829,25 +3829,25 @@ innerAudioContext.onError((res) => {
          * - 'WX_CODE': 二维码;
          * - 'CODE_25': 一维码; */
         scanType:
-            | 'QR_CODE'
-            | 'AZTEC'
-            | 'CODABAR'
-            | 'CODE_39'
-            | 'CODE_93'
-            | 'CODE_128'
-            | 'DATA_MATRIX'
-            | 'EAN_8'
-            | 'EAN_13'
-            | 'ITF'
-            | 'MAXICODE'
-            | 'PDF_417'
-            | 'RSS_14'
-            | 'RSS_EXPANDED'
-            | 'UPC_A'
-            | 'UPC_E'
-            | 'UPC_EAN_EXTENSION'
-            | 'WX_CODE'
-            | 'CODE_25'
+        | 'QR_CODE'
+        | 'AZTEC'
+        | 'CODABAR'
+        | 'CODE_39'
+        | 'CODE_93'
+        | 'CODE_128'
+        | 'DATA_MATRIX'
+        | 'EAN_8'
+        | 'EAN_13'
+        | 'ITF'
+        | 'MAXICODE'
+        | 'PDF_417'
+        | 'RSS_14'
+        | 'RSS_EXPANDED'
+        | 'UPC_A'
+        | 'UPC_E'
+        | 'UPC_EAN_EXTENSION'
+        | 'WX_CODE'
+        | 'CODE_25'
         errMsg: string
     }
     interface ScrollOffsetCallbackResult {
@@ -4511,13 +4511,13 @@ innerAudioContext.onError((res) => {
          * - 'step-start': 动画第一帧就跳至结束状态直到结束;
          * - 'step-end': 动画一直保持开始状态，最后一帧跳到结束状态; */
         timingFunction?:
-            | 'linear'
-            | 'ease'
-            | 'ease-in'
-            | 'ease-in-out'
-            | 'ease-out'
-            | 'step-start'
-            | 'step-end'
+        | 'linear'
+        | 'ease'
+        | 'ease-in'
+        | 'ease-in-out'
+        | 'ease-out'
+        | 'step-start'
+        | 'step-end'
         transformOrigin?: string
     }
     interface StopAccelerometerOption {
@@ -4991,17 +4991,17 @@ innerAudioContext.onError((res) => {
          * - 'utf8': ;
          * - 'latin1': ; */
         encoding?:
-            | 'ascii'
-            | 'base64'
-            | 'binary'
-            | 'hex'
-            | 'ucs2'
-            | 'ucs-2'
-            | 'utf16le'
-            | 'utf-16le'
-            | 'utf-8'
-            | 'utf8'
-            | 'latin1'
+        | 'ascii'
+        | 'base64'
+        | 'binary'
+        | 'hex'
+        | 'ucs2'
+        | 'ucs-2'
+        | 'utf16le'
+        | 'utf-16le'
+        | 'utf-8'
+        | 'utf8'
+        | 'latin1'
         /** 接口调用失败的回调函数 */
         fail?: WriteFileFailCallback
         /** 接口调用成功的回调函数 */
@@ -15437,45 +15437,45 @@ wx.writeBLECharacteristicValue({
     /** 接口调用成功的回调函数 */
     type WxStopRecordSuccessCallback = (res: GeneralCallbackResult) => void
 }
-declare const console: WechatMiniprogram.Console
+// declare const console: WechatMiniprogram.Console
 declare const wx: WechatMiniprogram.Wx
-declare function require(module: string): any
-declare let module: { exports: any }
-declare let exports: any
+// declare function require(module: string): any
+// declare let module: { exports: any }
+// declare let exports: any
 
-/** [clearInterval(number intervalID)](https://developers.weixin.qq.com/miniprogram/dev/api/base/timer/clearInterval.html)
- *
- * 取消由 setInterval 设置的定时器。 */
-declare function clearInterval(
-    /** 要取消的定时器的 ID */
-    intervalID: number,
-): void
-/** [number setInterval(function callback, number delay, any rest)](https://developers.weixin.qq.com/miniprogram/dev/api/base/timer/setInterval.html)
- *
- * 设定一个定时器。按照指定的周期（以毫秒计）来执行注册的回调函数 */
-declare function setInterval(
-    /** 回调函数 */
-    callback: (...args: any[]) => any,
-    /** 执行回调函数之间的时间间隔，单位 ms。 */
-    delay?: number,
-    /** param1, param2, ..., paramN 等附加参数，它们会作为参数传递给回调函数。 */
-    rest?: any,
-): number
-/** [clearTimeout(number timeoutID)](https://developers.weixin.qq.com/miniprogram/dev/api/base/timer/clearTimeout.html)
- *
- * 取消由 setTimeout 设置的定时器。 */
-declare function clearTimeout(
-    /** 要取消的定时器的 ID */
-    timeoutID: number,
-): void
-/** [number setTimeout(function callback, number delay, any rest)](https://developers.weixin.qq.com/miniprogram/dev/api/base/timer/setTimeout.html)
- *
- * 设定一个定时器。在定时到期以后执行注册的回调函数 */
-declare function setTimeout(
-    /** 回调函数 */
-    callback: (...args: any[]) => any,
-    /** 延迟的时间，函数的调用会在该延迟之后发生，单位 ms。 */
-    delay?: number,
-    /** param1, param2, ..., paramN 等附加参数，它们会作为参数传递给回调函数。 */
-    rest?: any,
-): number
+// /** [clearInterval(number intervalID)](https://developers.weixin.qq.com/miniprogram/dev/api/base/timer/clearInterval.html)
+//  *
+//  * 取消由 setInterval 设置的定时器。 */
+// declare function clearInterval(
+//     /** 要取消的定时器的 ID */
+//     intervalID: number,
+// ): void
+// /** [number setInterval(function callback, number delay, any rest)](https://developers.weixin.qq.com/miniprogram/dev/api/base/timer/setInterval.html)
+//  *
+//  * 设定一个定时器。按照指定的周期（以毫秒计）来执行注册的回调函数 */
+// declare function setInterval(
+//     /** 回调函数 */
+//     callback: (...args: any[]) => any,
+//     /** 执行回调函数之间的时间间隔，单位 ms。 */
+//     delay?: number,
+//     /** param1, param2, ..., paramN 等附加参数，它们会作为参数传递给回调函数。 */
+//     rest?: any,
+// ): number
+// /** [clearTimeout(number timeoutID)](https://developers.weixin.qq.com/miniprogram/dev/api/base/timer/clearTimeout.html)
+//  *
+//  * 取消由 setTimeout 设置的定时器。 */
+// declare function clearTimeout(
+//     /** 要取消的定时器的 ID */
+//     timeoutID: number,
+// ): void
+// /** [number setTimeout(function callback, number delay, any rest)](https://developers.weixin.qq.com/miniprogram/dev/api/base/timer/setTimeout.html)
+//  *
+//  * 设定一个定时器。在定时到期以后执行注册的回调函数 */
+// declare function setTimeout(
+//     /** 回调函数 */
+//     callback: (...args: any[]) => any,
+//     /** 延迟的时间，函数的调用会在该延迟之后发生，单位 ms。 */
+//     delay?: number,
+//     /** param1, param2, ..., paramN 等附加参数，它们会作为参数传递给回调函数。 */
+//     rest?: any,
+// ): number

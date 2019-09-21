@@ -26,14 +26,14 @@ declare namespace WechatMiniprogram {
             TData extends DataOption,
             TProperty extends PropertyOption,
             TMethod extends MethodOption
-        > = Component.Instance<TData, TProperty, TMethod>
+            > = Component.Instance<TData, TProperty, TMethod>
         type TrivialInstance = Instance<IAnyObject, IAnyObject, IAnyObject>
         type TrivialOption = Options<IAnyObject, IAnyObject, IAnyObject>
         type Options<
             TData extends DataOption,
             TProperty extends PropertyOption,
             TMethod extends MethodOption
-        > = Partial<Data<TData>> &
+            > = Partial<Data<TData>> &
             Partial<Property<TProperty>> &
             Partial<Method<TMethod>> &
             Partial<OtherOption> &
@@ -44,7 +44,7 @@ declare namespace WechatMiniprogram {
                 TData extends DataOption,
                 TProperty extends PropertyOption,
                 TMethod extends MethodOption
-            >(
+                >(
                 options: Options<TData, TProperty, TMethod>,
             ): string
         }
@@ -63,4 +63,4 @@ declare namespace WechatMiniprogram {
     }
 }
 /** 注册一个 `behavior`，接受一个 `Object` 类型的参数。*/
-declare const Behavior: WechatMiniprogram.Behavior.Constructor
+// declare const Behavior: WechatMiniprogram.Behavior.Constructor
