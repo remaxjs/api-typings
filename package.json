@@ -1,5 +1,5 @@
 {
-  "name": "miniprogram-api-typings",
+  "name": "@remax/miniprogram-api-typings",
   "version": "2.9.2",
   "description": "Type definitions for APIs of Wechat Mini Program in TypeScript",
   "main": "./index.d.ts",
